@@ -12,6 +12,7 @@
 		1CAB483920DB8B4E00F65759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CAB483720DB8B4E00F65759 /* Main.storyboard */; };
 		1CAB483B20DB8B5200F65759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CAB483A20DB8B5200F65759 /* Assets.xcassets */; };
 		1CAB483E20DB8B5200F65759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CAB483C20DB8B5200F65759 /* LaunchScreen.storyboard */; };
+		1CAB484720DB94E900F65759 /* XBShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAB484620DB94E900F65759 /* XBShareView.swift */; };
 		9BF2BFDB487055FD40730527 /* Pods_XBShareViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58319F79255DEE769F853AC6 /* Pods_XBShareViewDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		1CAB483A20DB8B5200F65759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CAB483D20DB8B5200F65759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CAB483F20DB8B5200F65759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CAB484620DB94E900F65759 /* XBShareView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XBShareView.swift; sourceTree = "<group>"; };
 		58319F79255DEE769F853AC6 /* Pods_XBShareViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XBShareViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58EE648F82135B9666D3B45 /* Pods-XBShareViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBShareViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XBShareViewDemo/Pods-XBShareViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +63,7 @@
 		1CAB483220DB8B4E00F65759 /* XBShareViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1CAB484520DB94E900F65759 /* XBShareView */,
 				1CAB483320DB8B4E00F65759 /* AppDelegate.swift */,
 				1CAB483520DB8B4E00F65759 /* ViewController.swift */,
 				1CAB483720DB8B4E00F65759 /* Main.storyboard */,
@@ -69,6 +72,15 @@
 				1CAB483F20DB8B5200F65759 /* Info.plist */,
 			);
 			path = XBShareViewDemo;
+			sourceTree = "<group>";
+		};
+		1CAB484520DB94E900F65759 /* XBShareView */ = {
+			isa = PBXGroup;
+			children = (
+				1CAB484620DB94E900F65759 /* XBShareView.swift */,
+			);
+			name = XBShareView;
+			path = ../../XBShareView;
 			sourceTree = "<group>";
 		};
 		7D3E342A7B861A6D6AD203C1 /* Pods */ = {
@@ -201,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CAB483620DB8B4E00F65759 /* ViewController.swift in Sources */,
+				1CAB484720DB94E900F65759 /* XBShareView.swift in Sources */,
 				1CAB483420DB8B4E00F65759 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,7 +362,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2QC668LVNU;
 				INFOPLIST_FILE = XBShareViewDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yibao.XBShareViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -365,7 +381,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2QC668LVNU;
 				INFOPLIST_FILE = XBShareViewDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yibao.XBShareViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

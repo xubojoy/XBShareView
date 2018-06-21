@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 /// 全屏宽度
 let kScreenWitdh = UIScreen.main.bounds.width
 /// 全屏高度，不含状态栏高度
@@ -119,8 +120,8 @@ class XBShareView: UIView {
     ///
     /// - Parameter sender: <#sender description#>
     @objc func shareBtnClick(_ sender:UIButton) {
-        let shareProcessor = ShareProcessor()
-        shareProcessor.showShareViewWithImage(image: self.shareImage,platForm: XBShareType(rawValue: sender.tag)!)
+//        let shareProcessor = ShareProcessor()
+//        shareProcessor.showShareViewWithImage(image: self.shareImage,platForm: XBShareType(rawValue: sender.tag)!)
     }
     
     /// 关闭/隐藏
