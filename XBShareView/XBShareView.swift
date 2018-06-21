@@ -22,6 +22,7 @@ class XBShareView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.3)
         setupUI()
     }
     
@@ -95,7 +96,7 @@ class XBShareView: UIView {
         }
         
         let closeButton = UIButton(type: .custom)
-        closeButton.setImage(#imageLiteral(resourceName: "close_48"), for: .normal)
+        closeButton.setImage(#imageLiteral(resourceName: "close_32"), for: .normal)
         self.addSubview(closeButton)
         closeButton.snp.makeConstraints { (make) in
             make.bottom.equalTo(-10)
